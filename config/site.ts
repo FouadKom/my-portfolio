@@ -1,0 +1,42 @@
+export const siteConfig = {
+  name: "Fouad Komeiha | Developer Portfolio",
+  authorName: "Fouad Komeiha",
+  username: "fouadkomeiha",
+  description:
+    "Fouad's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
+  url: "https://fouadkomeiha.com",
+  links: {
+    twitter: "",
+    github: "https://github.com/FouadKom",
+  },
+  ogImage: "",
+  iconIco:
+    "",
+  logoIcon:
+    "",
+  keywords: [
+    "Fouad Komeiha",
+    "PhD in Computer Science, Recommendation Systems and the Semantic Web",
+    "Web Developer Portfolio",
+    "Next.js portfolio template",
+    "React portfolio template",
+    "Developer portfolio template",
+    "Portfolio website template",
+    "Next.js template",
+    "Modern portfolio website",
+    "Frontend developer portfolio",
+    "Full stack developer portfolio",
+    "Open source portfolio template",
+    "Web developer portfolio template",
+    "Responsive portfolio template",
+    "React.js portfolio",
+    "Tailwind CSS portfolio",
+    "Developer showcase template",
+    "Free portfolio template",
+    "Next.js 13 template",
+    "Shadcn UI template",
+    "Career timeline template",
+    "Portfolio with dark mode",
+    "GitHub portfolio template",
+  ],
+};
