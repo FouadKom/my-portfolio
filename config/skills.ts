@@ -30,6 +30,13 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.react,
   },
   {
+    name: "Database Management",
+    description:
+      "SQL, MySQL",
+    rating: 5,
+    icon: Icons.nextjs,
+  },
+  {
     name: "Data Handling",
     description:
       "Pandas, NumPy, Feature Engineering",
