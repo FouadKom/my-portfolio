@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div> */}
       <div className="pt-5 space-y-3">
         <h5 className="text-2xl font-bold tracking-tight text-foreground">
-          {project.companyName}
+          {project.projectName}
         </h5>
         <p className="line-clamp-3 font-normal text-muted-foreground">
           {project.shortDescription}
