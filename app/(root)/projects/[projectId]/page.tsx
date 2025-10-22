@@ -46,7 +46,7 @@ export default function Project({ params }: ProjectPageProps) {
           {formatDateFromObj(project.startDate)}
         </time>
         <h1 className="flex items-center justify-between mt-2 font-heading text-4xl leading-tight lg:text-5xl">
-          {project.companyName}
+          {project.projectName}
           <div className="flex items-center">
             {project.githubLink && (
               <CustomTooltip text="Link to the source code.">
