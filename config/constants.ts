@@ -21,7 +21,11 @@ export type ValidSkills =
   | "Google Auth"
   | "MySQL"
   | "Java"
-  | "Maven"
+  | "Apache Maven"
+  | "Apache Jena"
+  | "MapDB"
+  | "RDF"
+  | "SPARQL"
   | "Databricks"
   | "Python"
   | "Docker"
@@ -89,6 +93,8 @@ export type ValidCategory =
   | "Data Science"
   | "Public Tool"
   | "Maven Library"
+  | "Linked Open Data"
+  | "Semantic Measures Library"
   | "3D Modeling";
 
 export type ValidExpType = "Personal" | "Professional";
