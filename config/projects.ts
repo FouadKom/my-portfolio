@@ -14,7 +14,7 @@ interface DescriptionDetailsInterface {
 export interface ProjectInterface {
   id: string;
   type: ValidExpType;
-  companyName: string;
+  projectName: string;
   category: ValidCategory[];
   shortDescription: string;
   websiteLink?: string;
@@ -22,15 +22,15 @@ export interface ProjectInterface {
   techStack: ValidSkills[];
   startDate: Date;
   endDate: Date;
-  companyLogoImg: any;
+  companyLogoImg?: any;
   descriptionDetails: DescriptionDetailsInterface;
-  pagesInfoArr: PagesInfoInterface[];
+  pagesInfoArr?: PagesInfoInterface[];
 }
 
 export const Projects: ProjectInterface[] = [
   {
     id: "yt-rag",
-    companyName: "Youtube Video Summarization & RAG CHatbot",
+    projectName: "Youtube Video Summarization & RAG CHatbot",
     type: "Personal",
     category: ["Genarative AI", "Retrieval Augmented Generation"],
     shortDescription:
@@ -68,7 +68,7 @@ export const Projects: ProjectInterface[] = [
 
   {
     id: "arabic-rag",
-    companyName: "RAG-based Arabic AI Chatbot & Public API ",
+    projectName: "RAG-based Arabic AI Chatbot & Public API ",
     type: "Personal",
     category: ["Genarative AI", "Retrieval Augmented Generation"],
     shortDescription:
@@ -85,10 +85,6 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2025-09"),
     endDate: new Date("2025-09"),
-    companyLogoImg: "",
-    pagesInfoArr: [
-
-    ],
     descriptionDetails: {
       paragraphs: [
         "Built this project to gain practical experience in multilingual GenAI applications, specifically handling Arabic text and integrating it with LLMs for contextual question answering.",
@@ -107,7 +103,7 @@ export const Projects: ProjectInterface[] = [
 
   {
     id: "capstone-project",
-    companyName: "Energy Consupmtion Prediction Using Machine Learning",
+    projectName: "Energy Consupmtion Prediction Using Machine Learning",
     type: "Professional",
     category: ["Machine Learning", "Data Science"],
     shortDescription:
@@ -116,10 +112,6 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Scikit-Learn", "TensorFlow", "Pandas", "Numpy", "Python"],
     startDate: new Date("2025-05-01"),
     endDate: new Date("2025-05-01"),
-    companyLogoImg: "",
-    pagesInfoArr: [
-
-    ],
     descriptionDetails: {
       paragraphs: [
         "Applied theoretical ML knowledge to a real-world problem (energy prediction), bridging coursework with practical AI engineering experience.",
@@ -134,26 +126,55 @@ export const Projects: ProjectInterface[] = [
 
   {
     id: "lds",
-    companyName: "LDS: Java Library for Linked Open Data Based Similarity Measures",
+    projectName: "LDS: Java Library for Linked Open Data Based Similarity Measures",
     type: "Professional",
-    category: ["Public Tool", "Maven Library"],
+    category: ["Public Tool", "Maven Library", "Semantic Measures Library", "Linked Open Data"],
     shortDescription:
-      "An open-source Java-Maven project implementing important existing semantic similarity measures.",
+      "LDS (Linked Data Similarity) is a Java library developed as the main project of my PhD research, designed to calculate semantic similarity over Linked Open Data (LOD). It implements a range of measures to quantify similarity between RDF resources, enabling research and applications in semantic web, recommendation systems, and knowledge graph analysis.",
     githubLink: "https://github.com/FouadKom/lds",
-    techStack: ["Java", "Maven"],
+    techStack: ["Java", "Apache Maven", "Apache Jena", "MapDB", "SPARQL"],
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/apex/logo.png",
-    pagesInfoArr: [
-
-    ],
     descriptionDetails: {
       paragraphs: [
-        "An open-source Java-Maven project implementing important existing semantic similarity measures.",
-        "LDS was the work of my research internship with the university of Tours, that we continued developing throughout my PhD work.",
+        "LDS (Linked Data Similarity) is a Java library developed as the main project of my PhD research, designed to calculate semantic similarity over Linked Open Data (LOD).", 
+        "It implements a range of measures to quantify similarity between RDF resources, enabling research and applications in semantic web, recommendation systems, and knowledge graph analysis.",
       ],
       bullets: [
-          
+        "Implements multiple semantic similarity measures for Linked Open Data, including LDSD, Resim, LODS, and PICSS.",
+        "Supports advanced extensions such as typeless and weighted variants (e.g., TLDSD, WLDSD, WTLDSD, TResim, WResim, WTResim).",
+        "Integrates with Apache Jena and the Semantic Measures Library for RDF-based similarity computation.",
+        "Provides both Maven dependency integration and standalone usage, with built-in unit tests for all implemented measures.",
+        "Enables researchers to compute correlation metrics using LdBenchmark and extend the library with custom similarity measures.",
+        "Focuses on scalable, efficient semantic similarity calculation for large linked datasets."
+          ],
+    },
+  },
+
+  {
+    id: "graphman",
+    projectName: "GraphManager for RDF Graphs",
+    type: "Professional",
+    category: ["Public Tool"],
+    shortDescription:
+      "An open-source Java-based library for creating, traversing, and managing semantic graphs.",
+    githubLink: "https://github.com/FouadKom/GraphManager",
+    techStack: ["Java", "Apache Jena", "MapDB", "SPARQL"],
+    startDate: new Date("2018-07-13"),
+    endDate: new Date("2018-07-13"),
+    descriptionDetails: {
+      paragraphs: [
+        "GraphManager is a Java-based library for building and analyzing semantic graphs.", 
+        "It was developed as part of my PhD research to facilitate exploration, traversal, and management of linked data and knowledge graphs.",
+      ],
+      bullets: [
+          "Generates semantic graphs using the Semantic Measures Library (SLIB).",
+          "Supports both ingoing and outgoing edge traversal with filtering by predicates.",
+          "Integrates with Apache Jena for SPARQL querying of RDF datasets (e.g., DBpedia).",
+          "Provides recursive resource traversal up to a configurable depth (level).",
+          "Includes utilities for inspecting, printing, and removing vertices and edges.",
+          "Prevents redundant traversal via a set of tracked resources.",
+          "Designed for research and analysis of linked data and semantic relationships."
       ],
     },
   },
