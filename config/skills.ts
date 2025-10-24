@@ -2,65 +2,92 @@ import { Icons } from "@/components/common/icons";
 
 export interface skillsInterface {
   name: string;
-  description: string;
+  description?: string;
   rating: number;
-  icon: any;
+  icon?: any;
 }
 
 export const skillsUnsorted: skillsInterface[] = [
   {
-    name: "Programming Languages",
-    description:
-      "Java, Python",
+    name: "Java",
     rating: 5,
-    icon: Icons.nextjs,
+    icon: Icons.java,
   },
   {
-    name: "LLM & GenAI Toolkits",
-    description:
-      "LangChain, Hugging Face Transformers, RAG, and Prompt Engineering",
+    name: "Python",
     rating: 4,
-    icon: Icons.nextjs,
+    icon: Icons.python,
   },
   {
-    name: "ML/DL Frameworks",
-    description:
-      "Scikit-learn, XGBoost, TensorFlow, Keras",
-    rating: 4,
-    icon: Icons.react,
-  },
-  {
-    name: "Database Management",
-    description:
-      "SQL, MySQL",
-    rating: 5,
-    icon: Icons.nextjs,
-  },
-  {
-    name: "Data Handling",
-    description:
-      "Pandas, NumPy, Feature Engineering",
-    rating: 4,
-    icon: Icons.graphql,
-  },
-  {
-    name: "Tools & Platforms",
-    description:
-      "Git, Jupyter Notebook, VSCode, Linux",
-    rating: 4,
-    icon: Icons.nestjs,
-  },
-  {
-    name: "Concepts",
-    description:
-      "Classification, Regression, Cross-Validation, Hyperparameter Tuning",
+    name: "Javascript",
     rating: 3,
-    icon: Icons.express,
+    icon: Icons.javascript,
   },
+  {
+    name: "Langchain",
+    rating: 4,
+    icon: Icons.langchain,
+  },
+  {
+    name: "Hugging Face",
+    rating: 4,
+    icon: Icons.huggingface,
+  },
+  {
+    name: "Reteival Augmented Generation (RAG)",
+    rating: 4,
+    icon: Icons.rag,
+  },
+  {
+    name: "SQL",
+    rating: 5,
+    icon: Icons.sql,
+  },
+  {
+    name: "MySQL",
+    rating: 4,
+    icon: Icons.mysql,
+  },
+  {
+    name: "Scikit-learn",
+    rating: 4,
+    icon: Icons.scikit,
+  },
+  {
+    name: "TensorFlow",
+    rating: 4,
+    icon: Icons.tensorflow,
+  },
+  {
+    name: "Panadas",
+    rating: 4,
+    icon: Icons.pandas,
+  },
+  {
+    name: "Numpy",
+    rating: 4,
+    icon: Icons.numpy,
+  },
+    {
+    name: "Git",
+    rating: 5,
+    icon: Icons.git,
+  },
+  {
+    name: "Linux",
+    rating: 5,
+    icon: Icons.linux,
+  },
+  {
+    name: "Windows",
+    rating: 5,
+    icon: Icons.windows,
+  },
+
 ];
 
 export const skills = skillsUnsorted
   .slice()
-  .sort((a, b) => b.rating - a.rating);
+  {/*.sort((a, b) => b.rating - a.rating);*/}
 
 export const featuredSkills = skills.slice(0, 6);
