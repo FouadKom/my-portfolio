@@ -38,14 +38,36 @@ export const experiences: ExperienceInterface[] = [
     position: "University Lecturer and Research Assistant",
     company: "University of Tours",
     location: "Tours, France",
-    startDate: new Date("2021-09-01"),
-    endDate: new Date("2023-09-01"),
+    startDate: new Date("2022-09-01"),
+    endDate: new Date("2024-09-01"),
     description: [
       "Delivered lectures and practical sessions on Java programming, data structures, and algorithms to undergraduate students.",
     ],
     achievements: [
       "Taught Java fundamentals with a focus on data structures and algorithm efficiency, foundational for ML model development.",
       "Introduced students to practical software development, supporting understanding of data handling and programming logic.",
+      "Trained students in integrating complementary technologies such as XML for data manipulation and storage.",
+      "Managed the pace of courses and modules to cover the most important topics, including labs.",
+      "Designed and wrote necessary tests for students, as well as proposed and managed projects to ensure complete understanding of taught modules."
+    ],
+    skills: ["Java", "MySQL"],
+    companyUrl: "https://international.univ-tours.fr/",
+    logo: "/experience/Univ_Tours_Logo.png",
+  },
+  {
+    id: "univ-lab",
+    position: "University Lab Assistant",
+    company: "University of Tours",
+    location: "Tours, France",
+    startDate: new Date("2020-09-01"),
+    endDate: new Date("2022-09-01"),
+    description: [
+      "Assisted and guided students during lab sessions for supported and hands-on learning.",
+    ],
+    achievements: [
+      "Monitored and supported students during lab sessions, ensuring understanding of programming assignments and concepts.",
+      "Explained key Java programming, algorithms, and data structures topics before and during lab exercises.",
+      "Provided one-on-one assistance and troubleshooting to help students successfully complete lab tasks."
     ],
     skills: ["Java", "MySQL"],
     companyUrl: "https://international.univ-tours.fr/",
