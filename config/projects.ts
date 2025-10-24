@@ -35,7 +35,7 @@ export const Projects: ProjectInterface[] = [
     category: ["Genarative AI", "Retrieval Augmented Generation"],
     shortDescription:
       "A Retrieval Augmented Generation project that provide answers to user queries based on Arabic docuements",
-    websiteLink: "",
+    githubLink: "https://github.com/FouadKom/Youtube-RAG-Chatbot",
     techStack: [
       "LangChain",
       "Google Gemini",
@@ -73,7 +73,7 @@ export const Projects: ProjectInterface[] = [
     category: ["Genarative AI", "Retrieval Augmented Generation"],
     shortDescription:
       "A Retrieval Augmented Generation project that provide answers to user queries based on Arabic documents",
-    githubLink: "",
+    githubLink: "https://github.com/FouadKom/Arabic-RAG-Chatbot",
     techStack: [
       "LangChain",
       "Google Gemini",
