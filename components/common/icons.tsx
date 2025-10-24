@@ -40,9 +40,9 @@ import {
   HiOutlineExternalLink,
   HiOutlineLink,
 } from "react-icons/hi";
-import { IoIosGitBranch } from "react-icons/io";
+import { IoIosGitBranch, IoLogoWindows } from "react-icons/io";
 import {
-  SiAmazonaws,
+  //SiAmazonaws,
   SiAngular,
   SiBootstrap,
   SiCss3,
@@ -63,10 +63,22 @@ import {
   SiRedux,
   SiSocketdotio,
   SiTailwindcss,
-  SiTwitter,
+  //SiTwitter,
   SiTypescript,
+  SiPython, 
+  SiGit, 
+  SiPandas,
+  SiNumpy,
+  SiJupyter,
+  SiLangchain,
+  SiHuggingface,
+  SiLinux,
+  SiScikitlearn,
+  SiTensorflow,
 } from "react-icons/si";
-
+import { FaJava, FaAsterisk } from "react-icons/fa";
+import { TbSql,TbBrandVscode } from "react-icons/tb";
+import { Tenor_Sans } from "next/font/google";
 
 export const Icons = {
   contact: Phone,
@@ -102,7 +114,7 @@ export const Icons = {
   link: HiOutlineLink,
   externalLink: HiOutlineExternalLink,
   star: AiFillStar,
-  amazonaws: SiAmazonaws,
+  //amazonaws: SiAmazonaws,
   angular: SiAngular,
   bootstrap: SiBootstrap,
   css3: SiCss3,
@@ -123,10 +135,25 @@ export const Icons = {
   tailwindcss: SiTailwindcss,
   typescript: SiTypescript,
   gmail: SiGmail,
-  twitter: SiTwitter,
+  //twitter: SiTwitter,
   linkedin: SiLinkedin,
   userFill: BiSolidUser,
   work: HiBriefcase,
+  python: SiPython,
+  java: FaJava,
+  sql: TbSql,
+  git: SiGit,
+  jupyter: SiJupyter,
+  vscode: TbBrandVscode,
+  pandas: SiPandas,
+  numpy: SiNumpy,
+  linux: SiLinux,
+  windows: IoLogoWindows,
+  langchain: SiLangchain,
+  huggingface: SiHuggingface,
+  scikit: SiScikitlearn,
+  tensorflow: SiTensorflow,
+  rag: FaAsterisk,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"
