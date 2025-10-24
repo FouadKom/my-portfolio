@@ -15,11 +15,12 @@ export default function SkillsCard({ skills }: SkillsCardProps) {
         >
           <div className="flex h-[230px] flex-col justify-between rounded-md p-6 sm:h-[230px]">
             {/*<skill.icon size={50} />*/}
+            <skill.icon size={50} />
             <div className="space-y-2">
               <h3 className="font-bold">{skill.name}</h3>
-              <p className="text-sm text-muted-foreground">
+              {/*<p className="text-sm text-muted-foreground">
                 {skill.description}
-              </p>
+              </p>*/}
               <Rating stars={skill.rating} />
             </div>
           </div>
