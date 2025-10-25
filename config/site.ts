@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Fouad Komeiha | Developer Portfolio",
+  name: "",
   authorName: "Fouad Komeiha",
   username: "fouadkomeiha",
   description:

@@ -34,9 +34,19 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.huggingface,
   },
   {
-    name: "Reteival Augmented Generation (RAG)",
+    name: "Retrieval Augmented Generation (RAG)",
     rating: 4,
     icon: Icons.rag,
+  },
+  {
+    name: "Linear Regression",
+    rating: 4,
+    icon: Icons.linearreg,
+  },
+  {
+    name: "Logistic Regression",
+    rating: 4,
+    icon: Icons.logisticreg,
   },
   {
     name: "SQL",
@@ -59,7 +69,7 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.tensorflow,
   },
   {
-    name: "Panadas",
+    name: "Pandas",
     rating: 4,
     icon: Icons.pandas,
   },

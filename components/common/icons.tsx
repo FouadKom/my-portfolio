@@ -34,7 +34,8 @@ import {
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
 import { BiLaugh, BiSolidUser } from "react-icons/bi";
-import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
+import { BsInfoCircle, BsQuestionCircle, BsGraphUp,  } from "react-icons/bs";
+import { VscGraphScatter } from "react-icons/vsc";
 import {
   HiBriefcase,
   HiOutlineExternalLink,
@@ -154,6 +155,8 @@ export const Icons = {
   scikit: SiScikitlearn,
   tensorflow: SiTensorflow,
   rag: FaAsterisk,
+  linearreg: BsGraphUp,
+  logisticreg: VscGraphScatter,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"
