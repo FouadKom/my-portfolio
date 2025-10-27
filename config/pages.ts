@@ -46,13 +46,13 @@ export const pagesConfig: PagesConfig = {
       description: "Contact Fouad Komeiha.",
     },
   },
-  contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
+  certifications: {
+    title: "Certifications",
+    description: "A collection of certifications showcasing my growth in AI.",
     metadata: {
-      title: "Contributions",
+      title: "Certifications",
       description:
-        "Fouad Komeiha's open-source contributions and community involvement.",
+        "Fouad Komeiha's certifications obtained throughtout my years.",
     },
   },
   resume: {
