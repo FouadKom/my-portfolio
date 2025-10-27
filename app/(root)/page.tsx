@@ -73,7 +73,8 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+      {/* Hero Section */}
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
           <Image
             src={profileImg}
@@ -137,8 +138,10 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
       </section>
+
+      {/* Skills Section */}
       <AnimatedSection
-        className="container space-y-6 bg-muted py-10"
+        className="container space-y-6 bg-muted py-10 my-14"
         id="skills"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -165,6 +168,8 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+
+      {/* Projects Section */}
       <AnimatedSection
         direction="right"
         className="container space-y-6 py-10 my-14"
@@ -203,15 +208,12 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-        {/* <div className="mx-auto text-center md:max-w-[58rem]">
-                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant experiences.
-                    </p>
-                </div> */}
       </AnimatedSection>
+
+      {/* Experience Section */}
       <AnimatedSection
         direction="left"
-        className="container space-y-6 py-10 mt-10"
+        className="container space-y-6 py-10 my-14"
         id="experience"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -247,7 +249,10 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-        <AnimatedSection
+      </AnimatedSection>
+
+      {/* Certifications Section */}
+      <AnimatedSection
         direction="down"
         className="container space-y-6 bg-muted py-10 my-14"
         id="certifications"
@@ -277,7 +282,6 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-      </AnimatedSection> 
       </AnimatedSection>
     </ClientPageWrapper>
   );

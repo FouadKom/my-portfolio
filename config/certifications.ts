@@ -36,7 +36,7 @@ export const certifications: CertificationInterface[] = [
   {
     title: "Introduction to Pandas Library",
     description:
-      "A practical introduction to using the Pandas library for data manipulation and analysis, covering essential functions and techniques to efficiently handle and analyze structured data in Python.",
+      "A practical introduction to using the Pandas library for data manipulation and analysis.",
     issuer: "Kaggle",
     date: "May 2024",
     link: "https://www.kaggle.com/learn/certification/fouadkomeiha/pandas",
