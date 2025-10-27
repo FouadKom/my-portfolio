@@ -22,7 +22,7 @@ export interface ProjectInterface {
   techStack: ValidSkills[];
   startDate: Date;
   endDate: Date;
-  companyLogoImg?: any;
+  projectImg?: any;
   descriptionDetails: DescriptionDetailsInterface;
   pagesInfoArr?: PagesInfoInterface[];
 }
@@ -30,7 +30,7 @@ export interface ProjectInterface {
 export const Projects: ProjectInterface[] = [
   {
     id: "yt-rag",
-    projectName: "Youtube Video Summarization & RAG CHatbot",
+    projectName: "Youtube Video Summarization & RAG Chatbot",
     type: "Personal",
     category: ["Genarative AI", "Retrieval Augmented Generation"],
     shortDescription:
@@ -47,10 +47,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2025-10"),
     endDate: new Date("2025-10"),
-    companyLogoImg: "",
-    pagesInfoArr: [
-
-    ],
+    projectImg: "/projects/youtube-rag.png",
     descriptionDetails: {
       paragraphs: [
         "Undertook this project to gain hands-on experience with RAG pipelines and GenAI workflows, bridging the gap between theoretical knowledge of LLMs and real-world implementation.",
@@ -85,6 +82,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2025-09"),
     endDate: new Date("2025-09"),
+    projectImg: "/projects/arabic-rag.png",
     descriptionDetails: {
       paragraphs: [
         "Built this project to gain practical experience in multilingual GenAI applications, specifically handling Arabic text and integrating it with LLMs for contextual question answering.",
@@ -112,6 +110,7 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Scikit-Learn", "TensorFlow", "Pandas", "Numpy", "Python"],
     startDate: new Date("2025-05-01"),
     endDate: new Date("2025-05-01"),
+    projectImg: "/projects/energy-prediction.png",
     descriptionDetails: {
       paragraphs: [
         "Applied theoretical ML knowledge to a real-world problem (energy prediction), bridging coursework with practical AI engineering experience.",
@@ -135,6 +134,7 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Java", "Apache Maven", "Apache Jena", "MapDB", "SPARQL"],
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
+    projectImg: "/projects/lds.png",
     descriptionDetails: {
       paragraphs: [
         "LDS (Linked Data Similarity) is a Java library developed as the main project of my PhD research, designed to calculate semantic similarity over Linked Open Data (LOD).", 
@@ -162,6 +162,7 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Java", "Apache Jena", "MapDB", "SPARQL"],
     startDate: new Date("2018-07-13"),
     endDate: new Date("2018-07-13"),
+    projectImg: "/projects/graphman.png",
     descriptionDetails: {
       paragraphs: [
         "GraphManager is a Java-based library for building and analyzing semantic graphs.", 

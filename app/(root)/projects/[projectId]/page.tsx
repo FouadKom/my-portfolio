@@ -51,7 +51,7 @@ export default function Project({ params }: ProjectPageProps) {
             {project.githubLink && (
               <CustomTooltip text="Link to the source code.">
                 <Link href={project.githubLink} target="_blank">
-                  <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
+                  <Icons.gitHub className="w-6 ml-4 text-foreground hover:text-muted-foreground" />
                 </Link>
               </CustomTooltip>
             )}
@@ -89,14 +89,14 @@ export default function Project({ params }: ProjectPageProps) {
       </div>
       
 
-      {/* <Image
-        src={project.companyLogoImg}
-        alt={project.companyName}
+      <Image
+        src={project.projectImg}
+        alt={project.projectName}
         width={720}
         height={405}
         className="my-8 rounded-md border bg-muted transition-colors"
         priority
-      /> */}
+      /> 
 
       <div className="mt-6 mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
