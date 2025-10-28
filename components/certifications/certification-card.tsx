@@ -15,20 +15,9 @@ export default function CertificationCard({ certifications }: CertificationCardP
       {certifications.map((cert, id) => {
         const CardContent = (
           <div className="relative rounded-lg border bg-background p-4 hover:bg-accent hover:text-accent-foreground transition flex flex-col gap-4 h-full">
-            
-            {/* Logo + Date */}
-            <div className="flex flex-wrap justify-between items-center gap-2">
-              {cert.logo && (
-                <Image
-                  src={cert.logo}
-                  alt={cert.issuer}
-                  width={40}
-                  height={40}
-                  className="rounded-md"
-                />
-              )}
-              <span className="text-xs text-muted-foreground">{cert.date}</span>
-            </div>
+
+            {/* Date */}
+            <span className="text-xs text-muted-foreground">{cert.date}</span>
 
             {/* Title */}
             <h3 className="font-bold text-base">{cert.title}</h3>
@@ -38,8 +27,19 @@ export default function CertificationCard({ certifications }: CertificationCardP
               {cert.description}
             </p>
 
-            {/* Issuer / Company */}
-            <p className="text-sm font-medium">{cert.issuer}</p>
+            {/* Issuer + Small Logo */}
+            <div className="flex items-center gap-2 mt-auto">
+              {cert.logo && (
+                <Image
+                  src={cert.logo}
+                  alt={`${cert.issuer} logo`}
+                  width={24}
+                  height={24}
+                  className="rounded-full object-cover"
+                />
+              )}
+              <p className="text-sm font-medium">{cert.issuer}</p>
+            </div>
 
             {/* External Link Icon */}
             {cert.link && (
@@ -51,7 +51,7 @@ export default function CertificationCard({ certifications }: CertificationCardP
           </div>
         );
 
-        // Wrap with Link only if link exists
+        // Wrap card in link only if it has a link
         return cert.link ? (
           <Link href={cert.link} target="_blank" key={id} className="flex h-full">
             {CardContent}

@@ -15,6 +15,7 @@ export const certifications: CertificationInterface[] = [
     description:
       "The course presents foundational machine learning concepts, including linear and logistic regression, neural networks and fine-tuning, decision trees, and ensemble learning.",
     issuer: "Class++",
+    logo: "/certifications/classplusplus-logo.jpg",
     date: "May 2025",
   },
   {
@@ -23,6 +24,7 @@ export const certifications: CertificationInterface[] = [
       "The course teaches fundamental data visualization techniques using Python and the Seaborn libraray.",
     issuer: "Kaggle",
     date: "June 2024",
+    logo: "/certifications/kaggle-logo.jpeg",
     link: "https://www.kaggle.com/learn/certification/fouadkomeiha/intermediate-machine-learning",
   },
   {
@@ -31,6 +33,7 @@ export const certifications: CertificationInterface[] = [
       "Explains techniques for Handling Missing Values, Categorical Variables, Cross Validation, and Data Leakage Prevention.",
     issuer: "Kaggle",
     date: "May 2024",
+    logo: "/certifications/kaggle-logo.jpeg",
     link: "https://www.kaggle.com/learn/certification/fouadkomeiha/intermediate-machine-learning",
   },
   {
@@ -39,6 +42,7 @@ export const certifications: CertificationInterface[] = [
       "A practical introduction to using the Pandas library for data manipulation and analysis.",
     issuer: "Kaggle",
     date: "May 2024",
+    logo: "/certifications/kaggle-logo.jpeg",
     link: "https://www.kaggle.com/learn/certification/fouadkomeiha/pandas",
   },
   {
@@ -47,6 +51,7 @@ export const certifications: CertificationInterface[] = [
       "A hands-on course covering core supervised learning techniques including regression, classification, and evaluation using real-world datasets.",
     issuer: "DeepLearning.AI",
     date: "April 2023",
+    logo: "/certifications/deeplearning.ai-logo.png",
     link: "https://www.coursera.org/account/accomplishments/certificate/UZ3UNJZ4BXVB",
   },
   {
@@ -55,6 +60,7 @@ export const certifications: CertificationInterface[] = [
       "Focused on building and optimizing neural networks through advanced machine learning techniques including regularization, optimization, and multiclass learning.",
     issuer: "DeepLearning.AI",
     date: "June 2023",
+    logo: "/certifications/deeplearning.ai-logo.png",
     link: "https://www.coursera.org/account/accomplishments/certificate/BS7UT4Z9DKMF",
   },
   {
@@ -63,6 +69,7 @@ export const certifications: CertificationInterface[] = [
       "Explored key AI techniques including clustering, recommender systems, and reinforcement learning to build autonomous decision-making solutions.",
     issuer: "DeepLearning.AI",
     date: "September 2023",
+    logo: "/certifications/deeplearning.ai-logo.png",
     link: "https://www.coursera.org/account/accomplishments/certificate/YDQVSLZZP8H9",
   },
 ];
