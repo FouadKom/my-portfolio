@@ -76,6 +76,7 @@ import {
   SiLinux,
   SiScikitlearn,
   SiTensorflow,
+  SiN8N,
 } from "react-icons/si";
 import { FaJava, FaAsterisk } from "react-icons/fa";
 import { TbSql,TbBrandVscode } from "react-icons/tb";
@@ -157,6 +158,7 @@ export const Icons = {
   rag: FaAsterisk,
   linearreg: BsGraphUp,
   logisticreg: VscGraphScatter,
+  n8n: SiN8N,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

@@ -39,6 +39,11 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.rag,
   },
   {
+    name: "n8n",
+    rating: 3,
+    icon: Icons.n8n,
+  },
+  {
     name: "Linear Regression",
     rating: 4,
     icon: Icons.linearreg,
