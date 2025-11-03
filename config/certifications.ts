@@ -11,6 +11,14 @@ export interface CertificationInterface {
 
 export const certifications: CertificationInterface[] = [
   {
+    title: "Agentic AI",
+    description:
+      "The course teaches how to build autonomous, multi-step AI systems in Python by mastering the four design patterns of planning, tool use, reflection and multi-agent coordination.",
+    issuer: "DeepLearning.AI",
+    logo: "/certifications/deeplearning.ai-logo.png",
+    date: "November 2025",
+  },
+  {
     title: "Fundamentals of Machine Learning",
     description:
       "The course presents foundational machine learning concepts, including linear and logistic regression, neural networks and fine-tuning, decision trees, and ensemble learning.",
